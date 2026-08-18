@@ -3,7 +3,7 @@
 // pulls the real historical hourly weather for that date, and returns the
 // daylight-window samples the drift engine needs.
 
-exports.handler = async (event) => {
+export const handler = async (event) => {
   const { location, date } = event.queryStringParameters || {};
   if (!location || !date) {
     return { statusCode: 400, body: JSON.stringify({ error: "location and date are required" }) };
