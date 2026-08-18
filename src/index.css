@@ -1,0 +1,3 @@
+:root { color-scheme: dark; }
+html, body { margin: 0; padding: 0; background: #0F140F; }
+* { -webkit-tap-highlight-color: transparent; }
